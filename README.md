@@ -53,5 +53,5 @@ You should create one R script called run_analysis.R that does the following.
 8. The data set in %%% is tidy 
   * Every variable is a column 
   * Every observation is a row
-9. A new tidy data set is created 
-10. The 
+9. A new tidy dataset **meandata** is being created by melting and casting **maindataset** and getting _mean_ of Ac  
+
