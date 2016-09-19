@@ -34,11 +34,11 @@ You should create one R script called run_analysis.R that does the following.
 1. The script downloads zip file from the following link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. The script unzips the files and stores them in the UCI HAR Dataset folder 
 3. The script extracts Training dataset from **train** folder (X_train.txt, y_train.txt) and Test dataset from **test** folder (X_test.txt, y_test.txt)
-** Activity datasets are stored in the **activity_train** (y_train.txt) and **activity_test** (y_test.txt) variables
-** Features datasets are stroed in the **feature_train** (X_train.txt) and **feature_test** (x_test.txt) varialbes
-** Subject datasets are stored in the **features_subject** (subject_train.txt) and **activiy_subject** (subject_test.txt)
+..* Activity datasets are stored in the **activity_train** (y_train.txt) and **activity_test** (y_test.txt) variables
+..* Features datasets are stroed in the **feature_train** (X_train.txt) and **feature_test** (x_test.txt) varialbes
+..* Subject datasets are stored in the **features_subject** (subject_train.txt) and **activiy_subject** (subject_test.txt)
 4. The script checks for the dimensions of the data and is merging 
-** Activites train and test datasets (y_train.txt, y_test.txt) into **activities** variable 
-** Subject train and test datasets
-** Feature train and test datasets
+..* Activites train and test datasets (y_train.txt, y_test.txt) into **activities** variable 
+..* Subject train and test datasets
+..* Feature train and test datasets
 
