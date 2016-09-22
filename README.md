@@ -44,14 +44,7 @@ You should create one R script called run_analysis.R that does the following.
   * Activites train and test datasets **activity_train** and **activity_test** are merged into **activities** variable 
   * Feature train and test datasets **feature_train** and **feature_test** are merged into **feature** variable
   * Subject train and test datasets **features_subject** and **activiy_subject** are merged into **subject** variable
-5. Further the script extract only the columns with STD and Mean data using gprepl function and updated the **feature** dataset
-6. Descriptives names are being given to the columns in **maindataset**
-7. Data are labeled in a disriptive manner in a **maindataset**: 
-  *
-  *
-  *
-8. The data set in %%% is tidy 
-  * Every variable is a column 
-  * Every observation is a row
-9. A new tidy dataset **meandata** is being created by melting and casting **maindataset** and getting _mean_ of Ac  
+5. Further the script extract only the columns with std() and mean() values using gprep function and updated the **feature** dataset
+6. Descriptives names are being given to the columns in **tidydataset**
+7. A new tidy dataset **meandata** is being created by melting and casting **tidydataset** and getting the _mean_ 
 
