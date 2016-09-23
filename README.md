@@ -1,4 +1,4 @@
-# Getting and Cleaning the Data Course Project
+# Getting and Cleaning the Data - Course Project
 
 Description of the course project: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
 
