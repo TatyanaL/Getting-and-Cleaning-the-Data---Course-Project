@@ -81,4 +81,4 @@ melteddata <- melt(tidydataset, id.vars =c("activity","subject"))
 
 meandata <- dcast(melteddata, activity +subject~ variable , mean)
 
-write.table(meandata, file=file.path(getwd(), "meandata.txt"))
+write.table(meandata, file=file.path(getwd(), "meandata.txt"), row.name=FALSE)
