@@ -72,7 +72,7 @@ names(tidydataset)<-gsub('^f',"frequency", names(tidydataset))
 names(tidydataset)<-gsub('^t',"time", names(tidydataset))
 names(tidydataset)<-gsub('BodyBody',"body", names(tidydataset))
 
-write.table(meandata, file=file.path(getwd(), "tidydataset.txt"), row.name=FALSE)
+write.table(tidydataset, file=file.path(getwd(), "tidydataset.txt"), row.name=FALSE)
 
 ### STEP 5 From the data set in step 4, creates a second, independent tidy data set with the 
 # average of each variable for each activity and each subject.
