@@ -72,7 +72,7 @@ names(tidydataset)<-gsub('^f',"frequency", names(tidydataset))
 names(tidydataset)<-gsub('^t',"time", names(tidydataset))
 names(tidydataset)<-gsub('BodyBody',"body", names(tidydataset))
 
-write.table(tidydataset, file=file.path(getwd(), "tidydataset.txt"), row.name=FALSE)
+write.table(tidydataset, file=file.path(getwd(), "merged_tidydataset.txt"), row.name=FALSE)
 
 ### STEP 5 From the data set in step 4, creates a second, independent tidy data set with the 
 # average of each variable for each activity and each subject.
@@ -81,4 +81,4 @@ melteddata <- melt(tidydataset, id.vars =c("activity","subject"))
 
 meandata <- dcast(melteddata, activity +subject~ variable , mean)
 
-write.table(meandata, file=file.path(getwd(), "meandata.txt"), row.name=FALSE)
+write.table(meandata, file=file.path(getwd(), "averaged_tidydataset.txt"), row.name=FALSE)
