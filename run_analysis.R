@@ -45,9 +45,7 @@ colnames(feature)<-feature_names
 ### STEP 2 Extract only the measurements on the mean and standard deviation for each measurement.
 
 feature_indx <- grep("-(mean|std)\\(\\)", feature_names, ignore.case = TRUE)
-
 feature = feature[,feature_indx]
-
 
 ### STEP 3 Uses descriptive activity names to name the activities in the data set
 
@@ -55,11 +53,9 @@ colnames(activity) <- "Activity"
 colnames(subject)<- "Subject"
 
 tidydataset <- cbind(activity, subject, feature) 
-
 tidydataset$Activity = activity_labels[tidydataset$Activity]
-### STEP 4 Appropriately labels the data set with descriptive variable names.
 
-oldnames <-names(tidydataset)
+### STEP 4 Appropriately labels the data set with descriptive variable names.
 
 names(tidydataset)<- tolower(names(tidydataset))
 names(tidydataset)<-gsub('Acc', "acceleration", names(tidydataset))
@@ -78,7 +74,6 @@ write.table(tidydataset, file=file.path(getwd(), "merged_tidydataset.txt"), row.
 # average of each variable for each activity and each subject.
 
 melteddata <- melt(tidydataset, id.vars =c("activity","subject"))
-
 meandata <- dcast(melteddata, activity +subject~ variable , mean)
 
 write.table(meandata, file=file.path(getwd(), "averaged_tidydataset.txt"), row.name=FALSE)
