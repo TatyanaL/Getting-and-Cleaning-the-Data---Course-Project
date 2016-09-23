@@ -39,7 +39,7 @@ You should create one R script called run_analysis.R that does the following.
   * Features datasets are stroed in the **feature_train** (X_train.txt) and **feature_test** (x_test.txt) varialbes
   * Subject datasets are stored in the **features_subject** (subject_train.txt) and **activiy_subject** (subject_test.txt)
 
-4. The script merges train & test of Acitivity, Features and Subject datasets prior checking for its dimensions/compabiity. The merge is performed using rbind.  
+4. The script merges train & test subsets of Acitivity, Features and Subject datasets prior checking for its dimensions/compabiity. The merge is performed using rbind -  
 
   * Activites train and test datasets **activity_train** and **activity_test** are merged into **activities** variable 
   * Feature train and test datasets **feature_train** and **feature_test** are merged into **feature** variable
